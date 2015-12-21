@@ -27,12 +27,13 @@ public class Greeting {
         logger.info("Setting default user locale. language = " + defaultLocale.getLanguage()
                 + ", country = " + defaultLocale.getCountry());
 
-        displayValues(resourceBundle);
-    }
-
-    public static void displayValues(ResourceBundle bundle) {
         LocalTime time = LocalTime.now();
         int hour = time.getHour();
+        displayValues(resourceBundle, hour );
+    }
+
+    public static void displayValues(ResourceBundle bundle, int hour) {
+
 
         logger.info("using LocalTime get the current time to bring greetings. hour = " + hour);
 
