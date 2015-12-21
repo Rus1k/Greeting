@@ -15,9 +15,7 @@ public class GreetingTest {
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
 
-    /*@Rule
-    public ExpectedException expectedException = ExpectedException.none();*/
-
+    
     @Before
     public void setUpStreams() {
         System.setOut(new PrintStream(outContent));
