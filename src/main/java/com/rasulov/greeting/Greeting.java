@@ -9,10 +9,12 @@ public class Greeting {
     public static final String DAY = "my.day";
     public static final String EVENING = "my.evening";
     public static final String NIGHT = "my.night";
+    private static final String RESOURCE_LABEL = "label";
+
 
     public static void greetingService() {
         Locale defaultLocale = Locale.getDefault();
-        ResourceBundle resourceBundle = ResourceBundle.getBundle("label", defaultLocale);
+        ResourceBundle resourceBundle = ResourceBundle.getBundle(RESOURCE_LABEL, defaultLocale);
         displayValues(resourceBundle);
     }
 
